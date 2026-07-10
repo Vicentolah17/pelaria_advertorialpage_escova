@@ -423,19 +423,30 @@
     border-radius: 2px;
     padding: 30px 34px;
     display: flex;
-    gap: 20px;
-    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
   }
-  .testimonial-body { flex: 1; }
-  .testimonial .stars { font-size: 14px; margin-bottom: 10px; display: block; }
+  .testimonial-header { display: flex; align-items: center; gap: 14px; }
+  .avatar-svg { width: 48px; height: 48px; flex-shrink: 0; display: block; }
+  .testimonial-meta { display: flex; flex-direction: column; gap: 3px; }
+  .testimonial .stars { font-size: 14px; display: block; margin: 0; }
   .testimonial blockquote {
     font-style: italic;
     font-size: 17px;
     line-height: 1.65;
-    margin-bottom: 12px;
+    margin: 0;
     text-wrap: pretty;
   }
-  .testimonial .who { font-size: 14px; color: #6B5D4F; }
+  .testimonial .who { font-size: 14px; color: #4A4038; font-weight: 600; font-style: normal; line-height: 1.3; margin: 0; }
+  .testimonial .who-date { font-size: 13px; color: #9A8B7A; font-style: normal; line-height: 1.3; margin: 0; }
+  .testimonial-photo {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 2px;
+  }
   .testimonials-note {
     text-align: center;
     font-size: 14px;
